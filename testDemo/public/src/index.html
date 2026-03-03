@@ -100,7 +100,7 @@
                             <div class="flex-1 flex items-center px-4 border-r border-slate-100 dark:border-slate-700">
                                 <span class="material-symbols-outlined text-slate-400 mr-2">search</span>
                                 <input type="text" id="hp-search-query" placeholder="Job title or keyword"
-                                    data-i18n="search-placeholder"
+                                    data-i18n="searc        h-placeholder"
                                     class="bg-transparent border-none focus:ring-0 w-full text-sm">
                             </div>
                             <div class="flex-1 flex items-center px-4 border-r border-slate-100 dark:border-slate-700">
@@ -304,7 +304,8 @@
                 <h2 class="text-3xl font-extrabold dark:text-white" data-i18n="jobs-title">Latest Job Openings
                 </h2>
             </div>
-            <a href="jobs.html" class="text-primary font-bold" data-i18n="jobs-view-all">View all jobs</a>
+            <a href="jobs.html" class="text-primary font-bold hover:underline transition-all"
+                data-i18n="jobs-view-all">View all jobs</a>
         </div>
         <div class="mx-auto max-w-7xl grid md:grid-cols-3 gap-8 text-left">
             <div
@@ -324,6 +325,9 @@
                             onclick="this.classList.toggle('text-primary'); this.textContent = this.textContent === 'bookmark' ? 'bookmark_added' : 'bookmark'"
                             class="material-symbols-outlined text-slate-300 hover:text-primary transition-colors">bookmark</button>
                     </div>
+                    <button onclick="window.location.href='job-detail.html?id=1'"
+                        class="w-full bg-slate-50 dark:bg-slate-700/50 text-primary hover:bg-primary hover:text-white py-3 rounded-xl text-sm font-bold transition-all mb-2"
+                        data-i18n="job-details">View Details</button>
                     <button onclick="window.handleApplyNow('Senior Frontend Engineer')"
                         class="w-full bg-primary hover:bg-blue-800 text-white py-3 rounded-xl text-sm font-bold transition-all"
                         data-i18n="job-apply">Apply Now</button>
@@ -345,6 +349,9 @@
                             onclick="this.classList.toggle('text-primary'); this.textContent = this.textContent === 'bookmark' ? 'bookmark_added' : 'bookmark'"
                             class="material-symbols-outlined text-slate-300 hover:text-primary transition-colors">bookmark</button>
                     </div>
+                    <button onclick="window.location.href='job-detail.html?id=2'"
+                        class="w-full bg-slate-50 dark:bg-slate-700/50 text-primary hover:bg-primary hover:text-white py-3 rounded-xl text-sm font-bold transition-all mb-2"
+                        data-i18n="job-details">View Details</button>
                     <button onclick="window.handleApplyNow('Product Designer')"
                         class="w-full bg-primary hover:bg-blue-800 text-white py-3 rounded-xl text-sm font-bold transition-all"
                         data-i18n="job-apply">Apply Now</button>
@@ -367,6 +374,9 @@
                             onclick="this.classList.toggle('text-primary'); this.textContent = this.textContent === 'bookmark' ? 'bookmark_added' : 'bookmark'"
                             class="material-symbols-outlined text-slate-300 hover:text-primary transition-colors">bookmark</button>
                     </div>
+                    <button onclick="window.location.href='job-detail.html?id=3'"
+                        class="w-full bg-slate-50 dark:bg-slate-700/50 text-primary hover:bg-primary hover:text-white py-3 rounded-xl text-sm font-bold transition-all mb-2"
+                        data-i18n="job-details">View Details</button>
                     <button onclick="window.handleApplyNow('Data Scientist')"
                         class="w-full bg-primary hover:bg-blue-800 text-white py-3 rounded-xl text-sm font-bold transition-all"
                         data-i18n="job-apply">Apply Now</button>
@@ -628,5 +638,5 @@
 
     <script src="main.js"></script>
 </body>
-    
+
 </html>
